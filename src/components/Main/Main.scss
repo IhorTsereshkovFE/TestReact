@@ -1,0 +1,305 @@
+.wrapperMain {
+  padding-top: 241px;
+  max-width: 1504px;
+  width: 100%;
+  .whyLove {
+    margin-bottom: 253px;
+    .titleLove {
+      font-family: "Poppins";
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 90px;
+      text-align: left;
+      color: rgba(55, 55, 55, 1);
+      margin-bottom: 32px;
+    }
+    .wrapperCard {
+      display: flex;
+      column-gap: 32px;
+      .cardComment {
+        max-width: 480px;
+        width: 100%;
+        padding: 48px 0;
+        .topWrapper {
+          display: flex;
+          column-gap: 26px;
+          margin-bottom: 27px;
+          .postName {
+            display: flex;
+            flex-direction: column;
+            .nameUser {
+              font-family: "Poppins";
+              font-size: 32px;
+              font-weight: 400;
+              line-height: 48px;
+              text-align: left;
+            }
+            .titleCard {
+              font-family: "Poppins";
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              text-align: left;
+              color: rgba(63, 194, 187, 1);
+            }
+          }
+        }
+        .descr {
+          font-family: "Poppins";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: rgba(112, 112, 112, 1);
+        }
+      }
+    }
+  }
+  .graphic {
+    font-family: "Poppins";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: left;
+    color: rgba(55, 55, 55, 1);
+    margin-bottom: 18px;
+  }
+  .graphicDescr {
+    max-width: 773px;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(112, 112, 112, 1);
+    margin-bottom: 53px;
+  }
+  .graphicIcon {
+    position: relative;
+    left: -150px;
+    width: 1804px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 280px;
+    img {
+      width: 270px;
+    }
+    .bgIcon {
+      width: 543px;
+      height: 535px;
+      position: absolute;
+      z-index: -1;
+      top: -355px;
+      right: 160px;
+    }
+  }
+  .designProcess {
+    font-family: "Poppins";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: left;
+    color: rgba(55, 55, 55, 1);
+    margin-bottom: 96px;
+  }
+  .cardDesign {
+    max-width: 1504px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 96px;
+    margin-bottom: 313px;
+    .card {
+      max-width: 480px;
+      width: 100%;
+      display: flex;
+      column-gap: 31px;
+      .wrapperCard {
+        .title {
+          font-family: "Poppins";
+          font-size: 40px;
+          font-weight: 400;
+          line-height: 60px;
+          letter-spacing: 0.25px;
+          text-align: left;
+          margin-bottom: 8px;
+        }
+        .descr {
+          max-width: 333px;
+          width: 100%;
+          font-family: "Poppins";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          color: rgba(112, 112, 112, 1);
+        }
+      }
+    }
+  }
+  .enjoyProductBox {
+    background-image: url("../../assets/fonpct.png");
+    max-width: 1504px;
+    height: 939px;
+    border-radius: 25px;
+    padding: 516px 0 0 32px;
+    margin-bottom: 240px;
+    .wrapperEnjoy {
+      max-width: 824px;
+      height: 318px;
+      border-radius: 16px;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.7);
+      padding: 32px 64px;
+      .title {
+        font-family: "Poppins";
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 90px;
+        text-align: left;
+        color: rgba(55, 55, 55, 1);
+        margin-bottom: 8px;
+      }
+      .descr {
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: rgba(112, 112, 112, 1);
+        margin-bottom: 36px;
+      }
+      .productButton {
+        width: 158px;
+        height: 48px;
+        border: 2px solid rgb(255, 215, 3);
+        border-radius: 100px;
+        background-color: rgb(255, 215, 3);
+        color: rgb(44, 44, 44);
+        font-family: "Poppins";
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 50px;
+        text-transform: uppercase;
+        @media (max-width: 600px) {
+          transform: scale(0.8);
+        }
+      }
+      .productButton::after {
+        content: url("../../assets/buttonElem.png");
+        position: absolute;
+        margin-left: 11px;
+      }
+    }
+  }
+  .projectTeamBox {
+    max-width: 1504px;
+    width: 100%;
+    display: flex;
+    column-gap: 302px;
+    align-items: end;
+    margin-bottom: 96px;
+    .text {
+      max-width: 829px;
+      width: 100%;
+      .title {
+        font-family: "Poppins";
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 90px;
+        text-align: left;
+        color: rgba(55, 55, 55, 1);
+        margin-bottom: 17px;
+      }
+      .descr {
+        color: rgb(112, 112, 112);
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        text-align: left;
+      }
+    }
+    .teamButton {
+      width: 373px;
+      height: 79px;
+      position: relative;
+      padding-left: 70px;
+      border: 2px solid rgb(255, 215, 3);
+      border-radius: 200px;
+
+      background: rgb(255, 215, 3);
+
+      color: rgb(44, 44, 44);
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    .teamButton::after {
+      content: url("../../assets/pctButton.png");
+      position: absolute;
+      top: 17px;
+      right: 67px;
+    }
+  }
+  .cardBoxTeam {
+    max-width: 1504px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 240px;
+    .cardProfile {
+      max-width: 352px;
+      width: 100%;
+      position: relative;
+      .descrWrapper {
+        width: 272px;
+        padding: 16px 32px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        backdrop-filter: blur(3px);
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -50px;
+        left: 40px;
+        .postName {
+          margin-bottom: 16px;
+          .nameUser {
+            color: rgb(55, 55, 55);
+            font-family: "Poppins";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-bottom: 4px;
+          }
+          .titleCard {
+            color: rgb(63, 194, 187);
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+        }
+        .imgWrapper {
+          display: flex;
+          column-gap: 23px;
+        }
+      }
+    }
+  }
+}

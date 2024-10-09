@@ -1,0 +1,9 @@
+@import "../style/vars.scss";
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+}

@@ -1,0 +1,142 @@
+@import "../../style/vars.scss";
+
+.wrapperFooter {
+  width: 100%;
+  background: rgb(11, 81, 77);
+  padding: 40px 208px;
+  .fotterBox {
+    max-width: 1504px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 70px;
+    .linkBox {
+      width: 830px;
+      width: 100%;
+      display: flex;
+      column-gap: 120px;
+      .product {
+        width: 103px;
+        @include flex(flex, column, 8px);
+        p {
+          color: $title_footer_color;
+          font-family: "Poppins";
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          text-align: left;
+          margin-bottom: 8px;
+        }
+        a {
+          @extend %link_footer;
+        }
+      }
+    }
+    .linkBox .product:nth-child(4) {
+      width: 185px;
+    }
+    .newsLetter {
+      width: 494px;
+      .topText {
+        color: $title_footer_color;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: left;
+        margin-bottom: 2px;
+      }
+      .middleText {
+        color: rgb(206, 255, 253);
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .bottomText {
+        color: rgb(255, 255, 255);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      .search {
+        form {
+          align-self: center;
+          display: flex;
+          margin-bottom: 32px;
+          input[type="text"] {
+            width: 312px;
+            height: 50px;
+            padding: 16px 34px 16px 34px;
+            box-sizing: border-box;
+            border: 1px solid rgb(202, 255, 253);
+            border-radius: 200px;
+            background: rgb(255, 255, 255);
+            margin-right: 16px;
+          }
+          button {
+            width: 158px;
+            height: 48px;
+            border: 2px solid rgb(255, 215, 3);
+            border-radius: 100px;
+            background-color: rgba(255, 213, 3, 0);
+            color: rgb(255, 215, 3);
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 45px;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+          button::after {
+            content: url("../../assets/Atom_Btn-Icon_Small_Flash.png");
+            position: absolute;
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    background-color: rgba(157, 157, 157, 0.724);
+    border: none;
+    height: 1px;
+    margin-bottom: 32px;
+  }
+  .bottomBox {
+    @include flex(flex, row, 0);
+    justify-content: space-between;
+    p {
+      color: rgb(63, 194, 187);
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      text-align: left;
+      opacity: 0.5;
+    }
+    .leftBox {
+      width: 260px;
+      @include flex(flex, row, 0);
+      justify-content: space-between;
+    }
+    .rightBox {
+      p::before {
+        content: url("../../assets/heart.png");
+        padding-right: 5px;
+        padding-top: 3px;
+      }
+    }
+  }
+}
